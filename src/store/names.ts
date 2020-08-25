@@ -1,0 +1,4 @@
+export const STORE_NAMES = {
+  GRAPH_STORE: Symbol('GRAPH_STORE'),
+  SELECTION_STORE: Symbol('SELECTION_STORE'),
+};
