@@ -6,7 +6,7 @@ import * as go from 'gojs';
 @injectable()
 export default class GraphStore {
   @observable diagram: go.Diagram | null = null;
-  @action.bound 
+  @action.bound
   setDiagram = (diagram: go.Diagram) => {
     this.diagram = diagram;
   };
