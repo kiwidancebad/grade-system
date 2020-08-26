@@ -6,9 +6,7 @@ const Wrapper = styled.div`
 `;
 
 const App = () => {
-  return (
-    <Wrapper></Wrapper>
-  );
+  return <Wrapper></Wrapper>;
 };
 
 export default App;

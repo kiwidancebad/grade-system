@@ -46,6 +46,8 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "gojs": "^2.1.23",
+    "gojs-react": "^1.0.8",
     "inversify": "^5.0.1",
     "mobx": "^5.15.6",
     "mobx-react": "^6.2.5",
