@@ -22,21 +22,21 @@ export type IMapDependencyToProps<R = any, P = {}> = (
 ) => R;
 
 export type InjectType<R extends any, P extends object = {}> = (
-  mapDependencyToProps: IMapDependencyToProps<R, P>
+  mapDependencyToProps: IMapDependencyToProps<R, P>,
 ) => (
-  Component: IReactComponent<P & ReturnType<IMapDependencyToProps<R, P>>>
+  Component: IReactComponent<P & ReturnType<IMapDependencyToProps<R, P>>>,
 ) => IReactComponent<P>;
 
 export const Inject = <R extends any, P extends object = {}>(
-  mapDependencyToProps: IMapDependencyToProps<R, P>
+  mapDependencyToProps: IMapDependencyToProps<R, P>,
 ) => (
-  Component: IReactComponent<P & ReturnType<IMapDependencyToProps<R, P>>>
+  Component: IReactComponent<P & ReturnType<IMapDependencyToProps<R, P>>>,
 ): IReactComponent<P> => {
   return class extends React.PureComponent<P> {
     render() {
       return (
         <Context.Consumer>
-          {context => {
+          {(context) => {
             let values: any = {};
             if (context !== null && typeof mapDependencyToProps === 'function') {
               try {
@@ -46,10 +46,10 @@ export const Inject = <R extends any, P extends object = {}>(
               }
             }
 
-            return <Component {...this.props} {...values} />
+            return <Component {...this.props} {...values} />;
           }}
         </Context.Consumer>
       );
     }
-  }
-}
+  };
+};

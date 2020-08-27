@@ -4,10 +4,6 @@ import * as storeContainer from 'store/container';
 
 export class Provider extends React.PureComponent {
   render() {
-    return (
-      <Context.Provider value={storeContainer}>
-        {this.props.children}
-      </Context.Provider>
-    );
+    return <Context.Provider value={storeContainer}>{this.props.children}</Context.Provider>;
   }
 }
