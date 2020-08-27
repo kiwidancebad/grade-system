@@ -19,6 +19,7 @@ module.exports = {
       hocs: path.resolve(__dirname, 'src/hocs'),
       containers: path.resolve(__dirname, 'src/containers'),
       modals: path.resolve(__dirname, 'src/components/modals'),
+      go: path.resolve(__dirname, 'src/go'),
     }
   },
   module: {

@@ -24,7 +24,8 @@
           "store": "./src/store",
           "hocs": "./src/hocs",
           "containers": "./src/containers",
-          "modals": "./src/components/modals"
+          "modals": "./src/components/modals",
+          "go": "./src/go"
         }
       }
     ]
