@@ -52,6 +52,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "canvas": "^2.6.1",
     "gojs": "^2.1.23",
     "gojs-react": "^1.0.8",
     "inversify": "^5.0.1",

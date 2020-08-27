@@ -16,4 +16,13 @@ export default class GraphStore implements IGraphStore {
   setDiagram = (diagram: go.Diagram) => {
     this.diagram = diagram;
   };
+  @action.bound
+  initDiagram = () => {
+    const $ = go.GraphObject.make;
+
+    const diagram = $(go.Diagram, {});
+    this.setDiagram(diagram);
+
+    return diagram;
+  };
 }
