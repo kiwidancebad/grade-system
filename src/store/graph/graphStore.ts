@@ -12,10 +12,12 @@ export interface IGraphStore {
 @injectable()
 export default class GraphStore implements IGraphStore {
   @observable diagram: go.Diagram | null = null;
+
   @action.bound
   setDiagram = (diagram: go.Diagram) => {
     this.diagram = diagram;
   };
+  
   @action.bound
   initDiagram = () => {
     const $ = go.GraphObject.make;
