@@ -1,5 +1,6 @@
 import { observable, action } from 'mobx';
 import { injectable } from 'inversify';
+import 'reflect-metadata';
 
 import * as go from 'gojs';
 

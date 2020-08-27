@@ -1,12 +1,12 @@
 import React from 'react';
-import App from './App';
+import { Provider } from './Provider';
 
 import { mount } from 'enzyme';
 
-describe('<App />', () => {
+describe('<Provider />', () => {
   describe('render', () => {
     it('successful', () => {
-      const Component = mount(<App />);
+      const Component = mount(<Provider />);
       expect(Component);
     })
   });
