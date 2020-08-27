@@ -1,7 +1,6 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -13,6 +12,14 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx', 'json', '.ts', '.tsx'],
+    alias: {
+      utils: path.resolve(__dirname, 'src/utils'),
+      components: path.resolve(__dirname, 'src/components'),
+      store: path.resolve(__dirname, 'src/store'),
+      hocs: path.resolve(__dirname, 'src/hocs'),
+      containers: path.resolve(__dirname, 'src/containers'),
+      modals: path.resolve(__dirname, 'src/components/modals'),
+    }
   },
   module: {
     rules: [

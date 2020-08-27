@@ -3,5 +3,29 @@
     "@babel/preset-env",
     "@babel/preset-react",
     "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "extensions": [
+          ".ts",
+          ".tsx",
+          ".jsx",
+          ".js",
+          ".json"
+        ],
+        "alias": {
+          "utils": "./src/utils",
+          "components": "./src/components",
+          "store": "./src/store",
+          "hocs": "./src/hocs",
+          "containers": "./src/containers",
+          "modals": "./src/components/modals"
+        }
+      }
+    ]
   ]
 }

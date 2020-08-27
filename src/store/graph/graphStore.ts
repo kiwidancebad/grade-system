@@ -3,8 +3,13 @@ import { injectable } from 'inversify';
 
 import * as go from 'gojs';
 
+export interface IGraphStore {
+  diagram: go.Diagram | null;
+  setDiagram: (d: go.Diagram) => void;
+}
+
 @injectable()
-export default class GraphStore {
+export default class GraphStore implements IGraphStore {
   @observable diagram: go.Diagram | null = null;
   @action.bound
   setDiagram = (diagram: go.Diagram) => {
