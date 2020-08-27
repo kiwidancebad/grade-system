@@ -24,7 +24,7 @@ describe('GraphStore', () => {
         expect(Store.diagram).toBeInstanceOf(go.Diagram);
       });
 
-      it('returns the diagram', () => {
+      it('returns the diagram object', () => {
         expect(typeof Store.initDiagram() === 'object');
       });
     });
