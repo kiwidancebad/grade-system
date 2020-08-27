@@ -9,20 +9,20 @@ export const NODES_DATA_MOCK: ITech[] = [
         id: 'variables',
         name: 'variables',
         description: 'javascript variables',
-        links: []
+        links: [],
       },
       {
         id: 'scope',
         name: 'scope',
         description: 'javascript scope',
-        links: []
+        links: [],
       },
       {
         id: 'functions',
         name: 'functions',
         description: 'javascript functions',
-        links: []
-      }
-    ]
-  }
+        links: [],
+      },
+    ],
+  },
 ];
