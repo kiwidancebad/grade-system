@@ -8,6 +8,6 @@ describe('<App />', () => {
     it('successful', () => {
       const Component = mount(<App />);
       expect(Component);
-    })
+    });
   });
 });
